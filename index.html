@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -9,306 +10,1076 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header class="header">
-    <a class="brand" href="#accueil"><img src="images/logo-ybr.svg" alt="YBR Sneakers"></a>
-    <button class="menu-btn" aria-label="Ouvrir le menu">☰</button>
-    <nav id="nav">
-      <a href="#accueil">Accueil</a>
-      <a href="#boutique">Boutique</a>
-      <a href="#categories">Catégories</a>
-      <a href="#produits">Catalogue</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <a class="brand" href="#accueil">
+      <img src="images/logo-ybr.svg" alt="YBR Sneakers">
+    </a>
+
+```
+<button class="menu-btn" aria-label="Ouvrir le menu">☰</button>
+
+<nav id="nav">
+  <a href="#accueil">Accueil</a>
+  <a href="#boutique">Boutique</a>
+  <a href="#categories">Catégories</a>
+  <a href="#produits">Catalogue</a>
+  <a href="#contact">Contact</a>
+</nav>
+```
+
   </header>
 
   <main>
-    <section class="hero" id="accueil">
-      <div class="hero-content">
-        <span class="eyebrow">YBR SNEAKERS</span>
-        <h1>Ton style.<br><span>Ta paire.</span><br>Ton YBR.</h1>
-        <p>Chaussures homme, femme et enfant, T-shirts et accessoires sélectionnés pour donner du caractère à ton style.</p>
-        <div class="actions">
-          <a class="btn primary" href="#boutique">Voir la boutique</a>
-          <a class="btn secondary" href="https://www.facebook.com/share/1KGi3gEemH/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="images/boutique.jpg" alt="Boutique YBR Sneakers">
-      </div>
-    </section>
 
-    <section class="intro" id="categories">
-      <div>
-        <span class="eyebrow">NOS ARTICLES</span>
-        <h2>Un style pour chaque moment.</h2>
-      </div>
-      <p>Explore une sélection de sneakers, chaussures et vêtements choisis pour donner du caractère à ton style.</p>
-    </section>
+```
+<section class="hero" id="accueil">
+  <div class="hero-content">
+    <span class="eyebrow">YBR SNEAKERS</span>
 
-    <section class="categories">
-      <article class="card">
-        <img src="images/chaussures-homme.jpg" alt="Chaussures homme YBR Sneakers">
-        <div><h3>Homme</h3><p>Chaussures élégantes et modèles pour tous les styles.</p></div>
-      </article>
-      <article class="card">
-        <img src="images/tshirts.jpg" alt="T-shirts YBR Sneakers">
-        <div><h3>T-shirts</h3><p>Des modèles oversize vus sur les publications de la boutique.</p></div>
-      </article>
-    </section>
+    <h1>
+      Ton style.<br>
+      <span>Ta paire.</span><br>
+      Ton YBR.
+    </h1>
 
-    <section class="shop" id="boutique">
-      <div class="section-heading">
-        <span class="eyebrow">LA BOUTIQUE</span>
-        <h2>Des produits vus chez YBR Sneakers.</h2>
-        <p>Un aperçu des articles disponibles en boutique, entre sneakers tendances et pièces streetwear sélectionnées.</p>
-      </div>
-      <div class="gallery">
-        <figure><img src="images/boutique.jpg" alt="Intérieur de la boutique YBR Sneakers"><figcaption>La boutique</figcaption></figure>
-        <figure><img src="images/chaussures-homme.jpg" alt="Chaussures homme"><figcaption>Chaussures homme</figcaption></figure>
-        <figure><img src="images/sneakers-collection-mur.jpg" alt="Sélection de sneakers"><figcaption>Sélection sneakers</figcaption></figure>
-      </div>
-    </section>
+    <p>
+      Chaussures homme, femme et enfant, T-shirts et accessoires
+      sélectionnés pour donner du caractère à ton style.
+    </p>
 
+    <div class="actions">
+      <a class="btn primary" href="#boutique">Voir la boutique</a>
 
-    <section class="products" id="produits">
-  <div class="catalog-top">
-    <div class="section-heading">
-      <span class="eyebrow">COLLECTION YBR</span>
-      <h2>Le catalogue.</h2>
-      <p>Découvre les articles actuellement présentés par YBR Sneakers. Clique sur un produit pour l’agrandir ou contacte-nous pour connaître son prix et sa disponibilité.</p>
-    </div>
-    <div class="catalog-tools" aria-label="Outils du catalogue">
-      <label class="search-box"><span>⌕</span><input id="productSearch" type="search" placeholder="Rechercher un article…" aria-label="Rechercher un article"></label>
+      <a
+        class="btn secondary"
+        href="https://www.facebook.com/share/1KGi3gEemH/?mibextid=wwXIfr"
+        target="_blank"
+        rel="noopener"
+      >
+        Facebook
+      </a>
     </div>
   </div>
-  <div class="catalog-meta"><span id="productCount">17 articles</span><span>Mis à jour selon les disponibilités</span></div>
-  <div class="product-grid" id="productGrid">
-    <article class="product-card" data-name="nike air force 1 noire black low homme femme">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-1.jpeg" data-title="Nike Air Force 1 Low Noire" aria-label="Agrandir Nike Air Force 1 Low Noire">
-        <span class="badge">Populaire</span><img src="images/catalogue/produit-1.jpeg" alt="Nike Air Force 1 Low Noire - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>Nike Air Force 1 Low Noire</h3>
-        <p>Nike Air Force 1 Low '07 entièrement noire, cuir lisse et semelle blanche classique.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Nike%20Air%20Force%201%20Low%20Noire%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="nike air force 1 blanche white low homme femme">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-2.jpeg" data-title="Nike Air Force 1 Low Blanche" aria-label="Agrandir Nike Air Force 1 Low Blanche">
-        <span class="badge">Populaire</span><img src="images/catalogue/produit-2.jpeg" alt="Nike Air Force 1 Low Blanche - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>Nike Air Force 1 Low Blanche</h3>
-        <p>Nike Air Force 1 Low '07 blanche intégrale, la référence intemporelle à porter en toute occasion.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Nike%20Air%20Force%201%20Low%20Blanche%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="air jordan 1 mid bleu blanc montante">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-3.jpeg" data-title="Air Jordan 1 Mid Bleu/Blanc" aria-label="Agrandir Air Jordan 1 Mid Bleu/Blanc">
-        <span class="badge">Nouveau</span><img src="images/catalogue/produit-3.jpeg" alt="Air Jordan 1 Mid Bleu/Blanc - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>Air Jordan 1 Mid Bleu/Blanc</h3>
-        <p>Air Jordan 1 Mid montante, coloris bleu royal et blanc, silhouette iconique signée Jordan.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Air%20Jordan%201%20Mid%20Bleu/Blanc%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="air jordan 4 blanc gris retro">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-4.jpeg" data-title="Air Jordan 4 Blanc/Gris" aria-label="Agrandir Air Jordan 4 Blanc/Gris">
-        <span class="badge">Nouveau</span><img src="images/catalogue/produit-4.jpeg" alt="Air Jordan 4 Blanc/Gris - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>Air Jordan 4 Blanc/Gris</h3>
-        <p>Air Jordan 4 Retro blanc cassé et gris, empiècements filet et semelle contrastée noire.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Air%20Jordan%204%20Blanc/Gris%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="air jordan 4 blanc gris clair retro">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-5.jpeg" data-title="Air Jordan 4 Blanc/Gris Clair" aria-label="Agrandir Air Jordan 4 Blanc/Gris Clair">
-        <span class="badge">Nouveau</span><img src="images/catalogue/produit-5.jpeg" alt="Air Jordan 4 Blanc/Gris Clair - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>Air Jordan 4 Blanc/Gris Clair</h3>
-        <p>Air Jordan 4 Retro coloris blanc et gris clair, détails Jumpman sur la languette.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Air%20Jordan%204%20Blanc/Gris%20Clair%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="nike dunk low gris blanc enfant junior">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-6.jpeg" data-title="Nike Dunk Low Gris/Blanc" aria-label="Agrandir Nike Dunk Low Gris/Blanc">
-        <span class="badge">Enfant</span><img src="images/catalogue/produit-6.jpeg" alt="Nike Dunk Low Gris/Blanc - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>Nike Dunk Low Gris/Blanc</h3>
-        <p>Nike Dunk Low coloris gris clair et blanc, silhouette basse confortable pour le quotidien.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Nike%20Dunk%20Low%20Gris/Blanc%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="nike dunk low kaki moutarde suede">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-7.jpeg" data-title="Nike Dunk Low Kaki/Moutarde" aria-label="Agrandir Nike Dunk Low Kaki/Moutarde">
-        <span class="badge">Nouveau</span><img src="images/catalogue/produit-7.jpeg" alt="Nike Dunk Low Kaki/Moutarde - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>Nike Dunk Low Kaki/Moutarde</h3>
-        <p>Nike Dunk Low en suède kaki et moutarde, semelle gomme, look vintage assuré.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Nike%20Dunk%20Low%20Kaki/Moutarde%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="air jordan 4 noir rouge retro">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-8.jpeg" data-title="Air Jordan 4 Noir/Rouge" aria-label="Agrandir Air Jordan 4 Noir/Rouge">
-        <span class="badge">Nouveau</span><img src="images/catalogue/produit-8.jpeg" alt="Air Jordan 4 Noir/Rouge - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>Air Jordan 4 Noir/Rouge</h3>
-        <p>Air Jordan 4 Retro noire avec empiècements rouge vif, un coloris qui ne passe pas inaperçu.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Air%20Jordan%204%20Noir/Rouge%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="air jordan 4 blanc rouge noir">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-9.jpeg" data-title="Air Jordan 4 Blanc/Rouge/Noir" aria-label="Agrandir Air Jordan 4 Blanc/Rouge/Noir">
-        <span class="badge">Nouveau</span><img src="images/catalogue/produit-9.jpeg" alt="Air Jordan 4 Blanc/Rouge/Noir - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>Air Jordan 4 Blanc/Rouge/Noir</h3>
-        <p>Air Jordan 4 Retro blanche, noire et rouge, un classique très recherché.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Air%20Jordan%204%20Blanc/Rouge/Noir%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="air jordan 3 beige marron elephant">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-10.jpeg" data-title="Air Jordan 3 Beige/Marron" aria-label="Agrandir Air Jordan 3 Beige/Marron">
-        <span class="badge">Nouveau</span><img src="images/catalogue/produit-10.jpeg" alt="Air Jordan 3 Beige/Marron - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>Air Jordan 3 Beige/Marron</h3>
-        <p>Air Jordan 3 Retro coloris beige et marron façon éléphant, un modèle rétro très apprécié.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Air%20Jordan%203%20Beige/Marron%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="air jordan 4 blanc rouge noir languette">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-11.jpeg" data-title="Air Jordan 4 Blanc/Rouge" aria-label="Agrandir Air Jordan 4 Blanc/Rouge">
-        <span class="badge">Nouveau</span><img src="images/catalogue/produit-11.jpeg" alt="Air Jordan 4 Blanc/Rouge - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>Air Jordan 4 Blanc/Rouge</h3>
-        <p>Air Jordan 4 Retro blanche avec touches rouge et noir, doublure Nike Air sur la languette.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Air%20Jordan%204%20Blanc/Rouge%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="catalogue sneakers ybr chaussures">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-12.jpeg" data-title="Collection Sneakers YBR" aria-label="Agrandir Collection Sneakers YBR">
-        <span class="badge">Collection</span><img src="images/catalogue/produit-12.jpeg" alt="Collection de sneakers YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>Collection Sneakers YBR</h3>
-        <p>Une sélection de sneakers présentées dans la boutique YBR Sneakers.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20la%20collection%20sneakers." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="tshirt oversize blanc casquette homme">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-13.jpeg" data-title="T-shirt Oversize Casquette" aria-label="Agrandir T-shirt Oversize Casquette">
-        <span class="badge">Nouveau</span><img src="images/catalogue/produit-13.jpeg" alt="T-shirt Oversize Casquette - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>T-shirt Oversize Casquette</h3>
-        <p>T-shirt oversize blanc à manches courtes, imprimé graphique casquette au dos.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20T-shirt%20Oversize%20Casquette%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="tshirt blanc velo enjoy every moment oversize">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-14.jpeg" data-title="T-shirt Enjoy Every (Vélo)" aria-label="Agrandir T-shirt Enjoy Every (Vélo)">
-        <span class="badge">Nouveau</span><img src="images/catalogue/produit-14.jpeg" alt="T-shirt Enjoy Every (Vélo) - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>T-shirt Enjoy Every (Vélo)</h3>
-        <p>T-shirt blanc oversize avec visuel vélo et inscription « Enjoy Every Moment ».</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20T-shirt%20Enjoy%20Every%20(Vélo)%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="tshirt gris da vinci oversize unisexe">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-15.jpeg" data-title="T-shirt Da Vinci" aria-label="Agrandir T-shirt Da Vinci">
-        <span class="badge">Nouveau</span><img src="images/catalogue/produit-15.jpeg" alt="T-shirt Da Vinci - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>T-shirt Da Vinci</h3>
-        <p>T-shirt gris oversize floqué « Da Vinci », coupe streetwear unisexe.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20T-shirt%20Da%20Vinci%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="tshirt blanc power oversize">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-16.jpeg" data-title="T-shirt Power" aria-label="Agrandir T-shirt Power">
-        <span class="badge">Nouveau</span><img src="images/catalogue/produit-16.jpeg" alt="T-shirt Power - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>T-shirt Power</h3>
-        <p>T-shirt blanc oversize floqué « Power », coupe ample et confortable.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20T-shirt%20Power%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
-    <article class="product-card" data-name="tshirt gris 777 oversize urbain">
-      <button class="product-image" type="button" data-image="images/catalogue/produit-17.jpeg" data-title="T-shirt 777" aria-label="Agrandir T-shirt 777">
-        <span class="badge">Nouveau</span><img src="images/catalogue/produit-17.jpeg" alt="T-shirt 777 - YBR Sneakers" loading="lazy">
-        <span class="zoom">Voir</span>
-      </button>
-      <div class="product-info">
-        <h3>T-shirt 777</h3>
-        <p>T-shirt gris oversize floqué « 777 » dans le dos, style urbain signé YBR.</p>
-        <a class="product-contact" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20T-shirt%20777%20%C2%BB." target="_blank" rel="noopener">Demander le prix <span>→</span></a>
-      </div>
-    </article>
+
+  <div class="hero-image">
+    <img src="images/boutique.jpg" alt="Boutique YBR Sneakers">
   </div>
-  <div class="no-results" id="noResults" hidden>Aucun article ne correspond à ta recherche.</div>
-  <div class="catalog-note"><strong>Besoin d’aide ?</strong><span>Écris à YBR Sneakers sur WhatsApp pour vérifier la taille, la couleur, le stock et le prix avant de commander.</span><a href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20voir%20les%20articles%20disponibles." target="_blank" rel="noopener">Contacter sur WhatsApp</a></div>
 </section>
 
+
+<section class="intro" id="categories">
+  <div>
+    <span class="eyebrow">NOS ARTICLES</span>
+    <h2>Un style pour chaque moment.</h2>
+  </div>
+
+  <p>
+    Explore une sélection de sneakers, chaussures et vêtements
+    choisis pour donner du caractère à ton style.
+  </p>
+</section>
+
+
+<section class="categories">
+
+  <article class="card">
+    <img
+      src="images/chaussures-homme.jpg"
+      alt="Chaussures homme YBR Sneakers"
+    >
+
+    <div>
+      <h3>Homme</h3>
+      <p>
+        Chaussures élégantes et modèles pour tous les styles.
+      </p>
+    </div>
+  </article>
+
+
+  <article class="card">
+    <img
+      src="images/tshirts.jpg"
+      alt="T-shirts YBR Sneakers"
+    >
+
+    <div>
+      <h3>T-shirts</h3>
+      <p>
+        Des modèles oversize vus sur les publications de la boutique.
+      </p>
+    </div>
+  </article>
+
+</section>
+
+
+<section class="shop" id="boutique">
+
+  <div class="section-heading">
+    <span class="eyebrow">LA BOUTIQUE</span>
+
+    <h2>Des produits vus chez YBR Sneakers.</h2>
+
+    <p>
+      Un aperçu des articles disponibles en boutique, entre sneakers
+      tendances et pièces streetwear sélectionnées.
+    </p>
+  </div>
+
+
+  <div class="gallery">
+
+    <figure>
+      <img
+        src="images/boutique.jpg"
+        alt="Intérieur de la boutique YBR Sneakers"
+      >
+      <figcaption>La boutique</figcaption>
+    </figure>
+
+
+    <figure>
+      <img
+        src="images/chaussures-homme.jpg"
+        alt="Chaussures homme"
+      >
+      <figcaption>Chaussures homme</figcaption>
+    </figure>
+
+
+    <figure>
+      <img
+        src="images/sneakers-collection-mur.jpg"
+        alt="Sélection de sneakers"
+      >
+      <figcaption>Sélection sneakers</figcaption>
+    </figure>
+
+  </div>
+
+</section>
+
+
+<section class="products" id="produits">
+
+  <div class="catalog-top">
+
+    <div class="section-heading">
+      <span class="eyebrow">COLLECTION YBR</span>
+
+      <h2>Le catalogue.</h2>
+
+      <p>
+        Découvre les articles actuellement présentés par YBR Sneakers.
+        Clique sur un produit pour l’agrandir ou contacte-nous pour
+        connaître son prix et sa disponibilité.
+      </p>
+    </div>
+
+
+    <div class="catalog-tools" aria-label="Outils du catalogue">
+
+      <label class="search-box">
+        <span>⌕</span>
+
+        <input
+          id="productSearch"
+          type="search"
+          placeholder="Rechercher un article…"
+          aria-label="Rechercher un article"
+        >
+      </label>
+
+    </div>
+
+  </div>
+
+
+  <div class="catalog-meta">
+    <span id="productCount">16 articles</span>
+    <span>Mis à jour selon les disponibilités</span>
+  </div>
+
+
+  <div class="product-grid" id="productGrid">
+
+
+    <article
+      class="product-card"
+      data-name="nike air force 1 noire black low homme femme"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-1.jpeg"
+        data-title="Nike Air Force 1 Low Noire"
+        aria-label="Agrandir Nike Air Force 1 Low Noire"
+      >
+        <span class="badge">Populaire</span>
+
+        <img
+          src="images/catalogue/produit-1.jpeg"
+          alt="Nike Air Force 1 Low Noire - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>Nike Air Force 1 Low Noire</h3>
+
+        <p>
+          Nike Air Force 1 Low '07 entièrement noire,
+          cuir lisse et semelle blanche classique.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Nike%20Air%20Force%201%20Low%20Noire%20%C2%BB."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="nike air force 1 blanche white low homme femme"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-2.jpeg"
+        data-title="Nike Air Force 1 Low Blanche"
+        aria-label="Agrandir Nike Air Force 1 Low Blanche"
+      >
+        <span class="badge">Populaire</span>
+
+        <img
+          src="images/catalogue/produit-2.jpeg"
+          alt="Nike Air Force 1 Low Blanche - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>Nike Air Force 1 Low Blanche</h3>
+
+        <p>
+          Nike Air Force 1 Low '07 blanche intégrale,
+          la référence intemporelle à porter en toute occasion.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Nike%20Air%20Force%201%20Low%20Blanche%20%C2%BB."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="air jordan 1 mid bleu blanc montante"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-3.jpeg"
+        data-title="Air Jordan 1 Mid Bleu/Blanc"
+        aria-label="Agrandir Air Jordan 1 Mid Bleu/Blanc"
+      >
+        <span class="badge">Nouveau</span>
+
+        <img
+          src="images/catalogue/produit-3.jpeg"
+          alt="Air Jordan 1 Mid Bleu/Blanc - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>Air Jordan 1 Mid Bleu/Blanc</h3>
+
+        <p>
+          Air Jordan 1 Mid montante, coloris bleu royal
+          et blanc, silhouette iconique signée Jordan.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Air%20Jordan%201%20Mid%20Bleu/Blanc%20%C2%BB."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="air jordan 4 blanc gris retro"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-4.jpeg"
+        data-title="Air Jordan 4 Blanc/Gris"
+        aria-label="Agrandir Air Jordan 4 Blanc/Gris"
+      >
+        <span class="badge">Nouveau</span>
+
+        <img
+          src="images/catalogue/produit-4.jpeg"
+          alt="Air Jordan 4 Blanc/Gris - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>Air Jordan 4 Blanc/Gris</h3>
+
+        <p>
+          Air Jordan 4 Retro blanc cassé et gris,
+          empiècements filet et semelle contrastée noire.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Air%20Jordan%204%20Blanc/Gris%20%C2%BB."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="air jordan 4 blanc gris clair retro"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-5.jpeg"
+        data-title="Air Jordan 4 Blanc/Gris Clair"
+        aria-label="Agrandir Air Jordan 4 Blanc/Gris Clair"
+      >
+        <span class="badge">Nouveau</span>
+
+        <img
+          src="images/catalogue/produit-5.jpeg"
+          alt="Air Jordan 4 Blanc/Gris Clair - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>Air Jordan 4 Blanc/Gris Clair</h3>
+
+        <p>
+          Air Jordan 4 Retro coloris blanc et gris clair,
+          détails Jumpman sur la languette.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Air%20Jordan%204%20Blanc/Gris%20Clair%20%C2%BB."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="nike dunk low gris blanc enfant junior"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-6.jpeg"
+        data-title="Nike Dunk Low Gris/Blanc"
+        aria-label="Agrandir Nike Dunk Low Gris/Blanc"
+      >
+        <span class="badge">Enfant</span>
+
+        <img
+          src="images/catalogue/produit-6.jpeg"
+          alt="Nike Dunk Low Gris/Blanc - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>Nike Dunk Low Gris/Blanc</h3>
+
+        <p>
+          Nike Dunk Low coloris gris clair et blanc,
+          silhouette basse confortable pour le quotidien.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article%20%C2%AB%20Nike%20Dunk%20Low%20Gris/Blanc%20%C2%BB."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="air jordan 1 low noir rouge"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-7.jpeg"
+        data-title="Air Jordan 1 Low Noir/Rouge"
+        aria-label="Agrandir Air Jordan 1 Low Noir/Rouge"
+      >
+        <span class="badge">Nouveau</span>
+
+        <img
+          src="images/catalogue/produit-7.jpeg"
+          alt="Air Jordan 1 Low Noir/Rouge - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>Air Jordan 1 Low Noir/Rouge</h3>
+
+        <p>
+          Modèle bas noir avec détails rouges,
+          parfait pour un style urbain.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="air jordan 4 noir blanc"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-8.jpeg"
+        data-title="Air Jordan 4 Noir/Blanc"
+        aria-label="Agrandir Air Jordan 4 Noir/Blanc"
+      >
+        <span class="badge">Nouveau</span>
+
+        <img
+          src="images/catalogue/produit-8.jpeg"
+          alt="Air Jordan 4 Noir/Blanc - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>Air Jordan 4 Noir/Blanc</h3>
+
+        <p>
+          Une silhouette Jordan 4 contrastée,
+          adaptée à un style streetwear.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="air jordan 1 rouge blanc"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-9.jpeg"
+        data-title="Air Jordan 1 Rouge/Blanc"
+        aria-label="Agrandir Air Jordan 1 Rouge/Blanc"
+      >
+        <span class="badge">Nouveau</span>
+
+        <img
+          src="images/catalogue/produit-9.jpeg"
+          alt="Air Jordan 1 Rouge/Blanc - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>Air Jordan 1 Rouge/Blanc</h3>
+
+        <p>
+          Une paire montante aux couleurs rouge
+          et blanche pour un look affirmé.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="air jordan 3 beige marron elephant"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-10.jpeg"
+        data-title="Air Jordan 3 Beige/Marron"
+        aria-label="Agrandir Air Jordan 3 Beige/Marron"
+      >
+        <span class="badge">Nouveau</span>
+
+        <img
+          src="images/catalogue/produit-10.jpeg"
+          alt="Air Jordan 3 Beige/Marron - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>Air Jordan 3 Beige/Marron</h3>
+
+        <p>
+          Air Jordan 3 Retro coloris beige et marron
+          façon éléphant, un modèle rétro très apprécié.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="air jordan 4 blanc rouge noir languette"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-11.jpeg"
+        data-title="Air Jordan 4 Blanc/Rouge"
+        aria-label="Agrandir Air Jordan 4 Blanc/Rouge"
+      >
+        <span class="badge">Nouveau</span>
+
+        <img
+          src="images/catalogue/produit-11.jpeg"
+          alt="Air Jordan 4 Blanc/Rouge - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>Air Jordan 4 Blanc/Rouge</h3>
+
+        <p>
+          Air Jordan 4 Retro blanche avec touches
+          rouge et noir, doublure Nike Air sur la languette.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="tshirt oversize blanc casquette homme"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-13.jpeg"
+        data-title="T-shirt Oversize Casquette"
+        aria-label="Agrandir T-shirt Oversize Casquette"
+      >
+        <span class="badge">Nouveau</span>
+
+        <img
+          src="images/catalogue/produit-13.jpeg"
+          alt="T-shirt Oversize Casquette - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>T-shirt Oversize Casquette</h3>
+
+        <p>
+          T-shirt oversize blanc à manches courtes,
+          imprimé graphique casquette au dos.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="tshirt blanc velo enjoy every moment oversize"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-14.jpeg"
+        data-title="T-shirt Enjoy Every"
+        aria-label="Agrandir T-shirt Enjoy Every"
+      >
+        <span class="badge">Nouveau</span>
+
+        <img
+          src="images/catalogue/produit-14.jpeg"
+          alt="T-shirt Enjoy Every - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>T-shirt Enjoy Every</h3>
+
+        <p>
+          T-shirt blanc oversize avec visuel vélo
+          et inscription « Enjoy Every Moment ».
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="tshirt gris da vinci oversize unisexe"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-15.jpeg"
+        data-title="T-shirt Da Vinci"
+        aria-label="Agrandir T-shirt Da Vinci"
+      >
+        <span class="badge">Nouveau</span>
+
+        <img
+          src="images/catalogue/produit-15.jpeg"
+          alt="T-shirt Da Vinci - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>T-shirt Da Vinci</h3>
+
+        <p>
+          T-shirt gris oversize floqué « Da Vinci »,
+          coupe streetwear unisexe.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="tshirt blanc power oversize"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-16.jpeg"
+        data-title="T-shirt Power"
+        aria-label="Agrandir T-shirt Power"
+      >
+        <span class="badge">Nouveau</span>
+
+        <img
+          src="images/catalogue/produit-16.jpeg"
+          alt="T-shirt Power - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>T-shirt Power</h3>
+
+        <p>
+          T-shirt blanc oversize floqué « Power »,
+          coupe ample et confortable.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+
+    <article
+      class="product-card"
+      data-name="tshirt gris 777 oversize urbain"
+    >
+
+      <button
+        class="product-image"
+        type="button"
+        data-image="images/catalogue/produit-17.jpeg"
+        data-title="T-shirt 777"
+        aria-label="Agrandir T-shirt 777"
+      >
+        <span class="badge">Nouveau</span>
+
+        <img
+          src="images/catalogue/produit-17.jpeg"
+          alt="T-shirt 777 - YBR Sneakers"
+          loading="lazy"
+        >
+
+        <span class="zoom">Voir</span>
+      </button>
+
+
+      <div class="product-info">
+        <h3>T-shirt 777</h3>
+
+        <p>
+          T-shirt gris oversize floqué « 777 » dans le dos,
+          style urbain signé YBR.
+        </p>
+
+        <a
+          class="product-contact"
+          href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20conna%C3%AEtre%20le%20prix%20et%20la%20disponibilit%C3%A9%20de%20l%E2%80%99article."
+          target="_blank"
+          rel="noopener"
+        >
+          Demander le prix <span>→</span>
+        </a>
+      </div>
+
+    </article>
+
+  </div>
+
+
+  <div class="no-results" id="noResults" hidden>
+    Aucun article ne correspond à ta recherche.
+  </div>
+
+
+  <div class="catalog-note">
+
+    <strong>Besoin d’aide ?</strong>
+
+    <span>
+      Écris à YBR Sneakers sur WhatsApp pour vérifier la taille,
+      la couleur, le stock et le prix avant de commander.
+    </span>
+
+    <a
+      href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20voir%20les%20articles%20disponibles."
+      target="_blank"
+      rel="noopener"
+    >
+      Contacter sur WhatsApp
+    </a>
+
+  </div>
+
+</section>
+
+
 <div class="lightbox" id="lightbox" hidden>
-  <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">×</button>
-  <div class="lightbox-inner"><img id="lightboxImage" src="" alt=""><div id="lightboxTitle"></div></div>
+
+  <button
+    class="lightbox-close"
+    id="lightboxClose"
+    aria-label="Fermer"
+  >
+    ×
+  </button>
+
+  <div class="lightbox-inner">
+
+    <img
+      id="lightboxImage"
+      src=""
+      alt=""
+    >
+
+    <div id="lightboxTitle"></div>
+
+  </div>
+
 </div>
 
-<section class="location">
-      <div>
-        <span class="eyebrow">NOUS TROUVER</span>
-        <h2>Abomey-Calavi</h2>
-        <p>Dans la 4ème von, à votre droite en quittant le carrefour Satellite, encore appelé carrefour du Tribunal d'Abomey-Calavi, pour la pharmacie Zoka.</p>
-      </div>
-      <a class="btn primary" href="https://www.google.com/maps/search/?api=1&amp;query=YBR+Sneakers+Abomey-Calavi" target="_blank" rel="noopener">Ouvrir Maps</a>
-    </section>
 
-    <section class="contact" id="contact">
-      <div>
-        <span class="eyebrow">CONTACT</span>
-        <h2>Une question ? Écris-nous.</h2>
-        <p>Pour connaître les disponibilités, tailles et prix, contacte directement YBR Sneakers.</p>
-      </div>
-      <div class="contact-actions">
-        <a class="contact-link" href="tel:+2290191218592">📞 01 91 21 85 92</a>
-        <a class="contact-link" href="mailto:elohjerry193@gmail.com">✉ elohjerry193@gmail.com</a>
-        <a class="contact-link" href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20avoir%20des%20informations." target="_blank" rel="noopener">WhatsApp</a>
-        <a class="contact-link" href="https://www.facebook.com/share/1KGi3gEemH/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook YBR Sneakers</a>
-      </div>
-    </section>
+<section class="location">
+
+  <div>
+    <span class="eyebrow">NOUS TROUVER</span>
+
+    <h2>Abomey-Calavi</h2>
+
+    <p>
+      Dans la 4ème von, à votre droite en quittant le carrefour
+      Satellite, encore appelé carrefour du Tribunal d'Abomey-Calavi,
+      pour la pharmacie Zoka.
+    </p>
+  </div>
+
+  <a
+    class="btn primary"
+    href="https://www.google.com/maps/search/?api=1&amp;query=YBR+Sneakers+Abomey-Calavi"
+    target="_blank"
+    rel="noopener"
+  >
+    Ouvrir Maps
+  </a>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+  <div>
+
+    <span class="eyebrow">CONTACT</span>
+
+    <h2>Une question ? Écris-nous.</h2>
+
+    <p>
+      Pour connaître les disponibilités, tailles et prix,
+      contacte directement YBR Sneakers.
+    </p>
+
+  </div>
+
+
+  <div class="contact-actions">
+
+    <a
+      class="contact-link"
+      href="tel:+2290191218592"
+    >
+      📞 01 91 21 85 92
+    </a>
+
+    <a
+      class="contact-link"
+      href="mailto:elohjerry193@gmail.com"
+    >
+      ✉ elohjerry193@gmail.com
+    </a>
+
+    <a
+      class="contact-link"
+      href="https://wa.me/2290191218592?text=Bonjour%20YBR%20Sneakers%2C%20je%20voudrais%20avoir%20des%20informations."
+      target="_blank"
+      rel="noopener"
+    >
+      WhatsApp
+    </a>
+
+    <a
+      class="contact-link"
+      href="https://www.facebook.com/share/1KGi3gEemH/?mibextid=wwXIfr"
+      target="_blank"
+      rel="noopener"
+    >
+      Facebook YBR Sneakers
+    </a>
+
+  </div>
+
+</section>
+```
+
   </main>
 
   <footer>
-    <img src="images/logo-ybr.svg" alt="YBR Sneakers">
-    <p>© <span id="year"></span> YBR Sneakers — Abomey-Calavi, Bénin.</p>
+
+```
+<img
+  src="images/logo-ybr.svg"
+  alt="YBR Sneakers"
+>
+
+<p>
+  © <span id="year"></span>
+  YBR Sneakers — Abomey-Calavi, Bénin.
+</p>
+```
+
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
